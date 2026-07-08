@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Legal Document & Letter Generator | Professional Court & Business Templates</title>
+    
+    <!-- Comprehensive SEO Metadata -->
+    <meta name="description" content="Generate professional, print-ready legal documents instantly. Build customized Demand Letters, Cease & Desist Notices, Lease Amendments, NDAs, Promissory Notes, Independent Contractor Agreements, Letters of Intent, Small Claims Summaries, and Evidence Checklists with dynamic state-specific jurisdiction clauses and secure electronic signature integration. 100% free and client-side private.">
+    <meta name="keywords" content="demand letter generator, free cease and desist template, small claims case summary builder, rent lease amendment app, legal document checklist, state jurisdiction clauses, signable legal forms, non-disclosure agreement generator, promissory note template, independent contractor contract, letter of intent builder, auto save legal draft, printable legal letters">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="Free Legal Document & Letter Generator | Professional Court & Business Templates">
+    <meta property="og:description" content="Create, customize, sign, and print standard legal documents in minutes. Includes state-specific governing law clauses, real-time preview, and persistent auto-save drafting.">
+    <meta property="og:image" content="https://yourdomain.com/assets/og-legal-generator.jpg">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="Free Legal Document & Letter Generator">
+    <meta property="twitter:description" content="Create compliant, customized legal notices with local jurisdiction statutes and signature capabilities right from your browser.">
+    
+    <!-- Structured JSON-LD Data for SEO -->
+    <script type="application/ld:json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "DocuLegis: Ultimate Free Legal Document & Letter Suite",
+      "description": "An interactive, client-side application featuring automated forms for drafting Demand Letters, Cease and Desist notices, Lease Amendments, NDAs, Contractor Contracts, Promissory Notes, Letters of Intent, and Court Document Prep tools with digital signatures.",
+      "applicationCategory": "BusinessApplication, LegalApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. HTML5 Canvas supported.",
+      "features": ["Dynamic Jurisdiction Injections", "HTML5 Electronic Signature Capture", "Continuous LocalStorage Auto-Save Engine", "Print to PDF Styling Engine", "9 Document Builders"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <style>
+        /* Color System Tokens */
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #4f46e5;
+            --accent-hover: #4338ca;
+            --text-main: #334155;
+            --text-dark: #0f172a;
+            --bg-canvas: #f8fafc;
+            --border-color: #cbd5e1;
+            --success: #10b981;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --shadow-sheet: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-canvas);
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .header-container {
+            max-width: 1500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .brand h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: #f1f5f9;
+        }
+        
+        .brand span {
+            color: #818cf8;
+        }
+
+        .brand p {
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        /* Auto-save notification pill */
+        .save-status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #1e293b;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            border: 1px solid #334155;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--success);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px var(--success);
+        }
+
+        /* AdSense Container Blocks */
+        .adsense-placeholder {
+            background: #ffffff;
+            border: 1px dashed var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .adsense-top {
+            max-width: 1500px;
+            margin: 1rem auto 0 auto;
+            height: 90px;
+            width: calc(100% - 2rem);
+            border-radius: 6px;
+        }
+
+        .adsense-sidebar {
+            width: 100%;
+            height: 250px;
+            margin-top: 1.5rem;
+            border-radius: 6px;
+        }
+
+        /* Main Workspace Layout */
+        .app-container {
+            display: flex;
+            max-width: 1550px;
+            margin: 1.5rem auto;
+            padding: 0 1rem;
+            gap: 1.5rem;
+        }
+
+        /* Left Control Panel */
+        .control-panel {
+            flex: 1.2;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Right Real-time Preview Panel */
+        .preview-panel {
+            flex: 1.1;
+            position: sticky;
+            top: 1.5rem;
+            height: calc(100vh - 3rem);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .panel-card {
+            background: white;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            padding: 1.5rem;
+        }
+
+        /* Top Controls: Navigation Tabs & Jurisdiction Select */
+        .config-row {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .jurisdiction-box {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+            flex-shrink: 0;
+            width: 100%;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        select, input, textarea {
+            width: 100%;
+            padding: 0.65rem 0.75rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            background-color: #ffffff;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        select:focus, input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+        }
+
+        .tabs-nav {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.35rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.75rem;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: #64748b;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-align: center;
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+        }
+
+        .tab-btn:hover {
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+        }
+
+        .tab-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Form Layout Styles */
+        .form-section {
+            display: none;
+            animation: fadeIn 0.3s ease-in-out forwards;
+        }
+
+        .form-section.active {
+            display: block;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .section-divider {
+            margin: 1.5rem 0 1rem 0;
+            border: 0;
+            border-top: 1px solid #e2e8f0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Signature Canvas Styles */
+        .signature-area {
+            background-color: #f8fafc;
+            border: 2px dashed var(--border-color);
+            border-radius: 6px;
+            position: relative;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+
+        #sig-canvas {
+            width: 100%;
+            height: 150px;
+            cursor: crosshair;
+            display: block;
+            background: #ffffff;
+        }
+
+        .sig-controls {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            background: #f1f5f9;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Dynamic array lists */
+        .array-row-input {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .btn {
+            padding: 0.65rem 1.25rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-secondary {
+            background-color: #e2e8f0;
+            color: var(--text-dark);
+        }
+
+        .btn-secondary:hover {
+            background-color: #cbd5e1;
+        }
+
+        .btn-danger {
+            background-color: #ef4444;
+            color: white;
+            padding: 0.5rem;
+        }
+
+        .item-list-container {
+            margin-top: 1rem;
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: #f8fafc;
+        }
+
+        .array-item-node {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+        }
+
+        .array-item-node:last-child {
+            border-bottom: none;
+        }
+
+        /* Printable Document Canvas Simulation */
+        .preview-header-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--primary);
+            padding: 0.75rem 1.25rem;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            color: white;
+        }
+
+        .preview-scroll-wrapper {
+            overflow-y: auto;
+            background-color: #475569;
+            padding: 2rem 1rem;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .legal-sheet {
+            background: #ffffff;
+            width: 100%;
+            max-width: 8.5in;
+            min-height: 11in;
+            padding: 1in;
+            box-shadow: var(--shadow-sheet);
+            color: #000000;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            position: relative;
+            word-wrap: break-word;
+        }
+
+        /* Legal Document Structure Elements */
+        .doc-header {
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            font-size: 13pt;
+            letter-spacing: 0.05em;
+            text-decoration: underline;
+        }
+
+        .doc-meta-block {
+            margin-bottom: 1.5rem;
+        }
+
+        .doc-row {
+            margin-bottom: 0.25rem;
+        }
+
+        .doc-recipient {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .doc-body {
+            text-align: justify;
+            margin-bottom: 1.5rem;
+        }
+
+        .doc-body p {
+            margin-bottom: 1.25rem;
+            text-indent: 0.5in;
+        }
+        
+        .doc-body p.no-indent {
+            text-indent: 0;
+        }
+
+        .doc-timeline-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 10pt;
+        }
+
+        .doc-timeline-table th, .doc-timeline-table td {
+            border: 1px solid #000000;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        .doc-timeline-table th {
+            background-color: #f1f5f9;
+        }
+
+        .jurisdiction-clause-render {
+            font-style: italic;
+            margin: 1.5rem 0;
+            padding: 0.75rem;
+            border-left: 3px solid #000000;
+            background: #fafafa;
+            text-indent: 0 !important;
+        }
+
+        .doc-signatures {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            page-break-inside: avoid;
+        }
+
+        .sig-block {
+            width: 45%;
+        }
+
+        .sig-line {
+            border-top: 1px solid #000000;
+            margin-top: 2.5rem;
+            padding-top: 0.25rem;
+        }
+
+        .injected-sig-img {
+            max-height: 60px;
+            max-width: 100%;
+            display: block;
+            margin-bottom: -2rem;
+            margin-left: 0.5rem;
+        }
+
+        /* SEO Editorial & Reference Information section */
+        .seo-content-section {
+            max-width: 1500px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .seo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .seo-card h3 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 0.5rem;
+        }
+
+        .seo-card p {
+            font-size: 0.9rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: #94a3b8;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            border-top: 4px solid var(--accent);
+            margin-top: 4rem;
+        }
+
+        footer p.disclaimer {
+            max-width: 1000px;
+            margin: 1rem auto 0 auto;
+            color: #64748b;
+            font-style: italic;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Strict Print Engine Styles Overrides */
+        @media print {
+            body, html {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+            
+            .no-print, header, footer, .control-panel, .preview-header-actions, .adsense-placeholder, .preview-panel {
+                display: none !important;
+            }
+
+            .preview-panel {
+                position: static !important;
+                height: auto !important;
+                width: 100% !important;
+                display: block !important;
+            }
+
+            .preview-scroll-wrapper {
+                background: #ffffff !important;
+                padding: 0 !important;
+                overflow: visible !important;
+                display: block !important;
+            }
+
+            .legal-sheet {
+                box-shadow: none !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+
+        /* Screen Responsive Tweaks */
+        @media (max-width: 1024px) {
+            .app-container {
+                flex-direction: column;
+            }
+            .preview-panel {
+                position: static;
+                height: auto;
+            }
+            .legal-sheet {
+                padding: 0.5in;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="no-print">
+        <div class="header-container">
+            <div class="brand">
+                <h1>DocuLegis<span>Pro</span></h1>
+                <p>9-Suite Professional Document Processing Engine</p>
+            </div>
+            <div class="save-status">
+                <span class="status-dot"></span>
+                <span id="save-status-text">Draft Synced to Local Storage</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="adsense-placeholder adsense-top no-print">
+        <div>
+            <p style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:2px;">Advertisement</p>
+            <span>Google AdSense Component Code Container Slot [Responsive Leaderboard Banner]</span>
+        </div>
+    </div>
+
+    <main class="app-container">
+        
+        <!-- Left Side Control Inputs Panel -->
+        <section class="control-panel no-print">
+            <div class="panel-card">
+                <div class="config-row">
+                    <div class="jurisdiction-box">
+                        <label for="global-jurisdiction">Applicable Governing Jurisdiction</label>
+                        <select id="global-jurisdiction" onchange="handleInputChange()">
+                            <option value="CA">California (Codes of Civil Procedure)</option>
+                            <option value="NY">New York (Consolidated Laws Framework)</option>
+                            <option value="TX">Texas (Civil Practice & Remedies Code)</option>
+                            <option value="FL">Florida (Circuit Judicial Structures)</option>
+                            <option value="IL">Illinois (Rules of Civil Procedure)</option>
+                            <option value="PA">Pennsylvania (Consolidated Statutes)</option>
+                            <option value="GA">Georgia (O.C.G.A. Guidelines)</option>
+                            <option value="WA">Washington (RCW Codes)</option>
+                            <option value="UK">United Kingdom (England & Wales Jurisdiction)</option>
+                            <option value="CAN">Canada (Ontario Civil Jurisdiction)</option>
+                            <option value="OTHER">Other State Framework / General Jurisdiction</option>
+                        </select>
+                    </div>
+                </div>
+
+                <nav class="tabs-nav" aria-label="Document selection tabs">
+                    <button class="tab-btn active" id="btn-demand" onclick="switchTab('demand')">1. Demand Letter</button>
+                    <button class="tab-btn" id="btn-cease" onclick="switchTab('cease')">2. Cease & Desist</button>
+                    <button class="tab-btn" id="btn-lease" onclick="switchTab('lease')">3. Lease Addendum</button>
+                    <button class="tab-btn" id="btn-nda" onclick="switchTab('nda')">4. NDA Builder</button>
+                    <button class="tab-btn" id="btn-contractor" onclick="switchTab('contractor')">5. Contractor Agr.</button>
+                    <button class="tab-btn" id="btn-promissory" onclick="switchTab('promissory')">6. Promissory Note</button>
+                    <button class="tab-btn" id="btn-loi" onclick="switchTab('loi')">7. Letter of Intent</button>
+                    <button class="tab-btn" id="btn-claims" onclick="switchTab('claims')">8. Small-Claims Prep</button>
+                    <button class="tab-btn" id="btn-checklist" onclick="switchTab('checklist')">9. Filing Checklist</button>
+                </nav>
+            </div>
+
+            <!-- TAB 1: DEMAND LETTER CONFIG -->
+            <div id="form-demand" class="panel-card form-section active">
+                <div class="section-title">Demand Letter Specifications</div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Sender Full Name / Company</label>
+                        <input type="text" id="dem-sender" placeholder="John Doe" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Sender Mailing Address</label>
+                        <input type="text" id="dem-sender-addr" placeholder="123 Main St, Suite A" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Recipient Full Name / Corporate Entity</label>
+                        <input type="text" id="dem-recipient" placeholder="Acme Logistics LLC" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Recipient Mailing Address</label>
+                        <input type="text" id="dem-recipient-addr" placeholder="456 Commerce Blvd" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Total Balance/Liquidated Claim Owed ($)</label>
+                        <input type="number" id="dem-amount" placeholder="2500.00" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Hard Settlement Deadline Date</label>
+                        <input type="date" id="dem-date" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Detailed Factual Basis of the Liability Claim</label>
+                        <textarea id="dem-basis" rows="4" placeholder="Describe breached terms, unrendered services, or property damage incidents clearly..." oninput="handleInputChange()"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 2: CEASE & DESIST CONFIG -->
+            <div id="form-cease" class="panel-card form-section">
+                <div class="section-title">Cease & Desist Directives</div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Protected Party (Sender)</label>
+                        <input type="text" id="cd-sender" placeholder="Jane Smith Legal Interests" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Target Infringing/Offending Entity</label>
+                        <input type="text" id="cd-recipient" placeholder="Offender Group Inc." oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Target Mailing Address</label>
+                        <input type="text" id="cd-recipient-addr" placeholder="789 Stop St, Sector 4" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Category of Offending Conduct</label>
+                        <select id="cd-type" onchange="handleInputChange()">
+                            <option value="Harassment and Cyberstalking">Harassment & Cyberstalking</option>
+                            <option value="Intellectual Property Trademark/Copyright Infringement">Intellectual Property Infringement</option>
+                            <option value="Defamation, Libel, and Slanderous Publication">Defamation / Libel</option>
+                            <option value="Unlawful Commercial Intrusion and Nuisance">Commercial Intrusion / Nuisance</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Chronological Incidents & Specific Infringing Acts</label>
+                        <textarea id="cd-incidents" rows="4" placeholder="List explicit dates, URLs, or actions executing the offending behavior..." oninput="handleInputChange()"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 3: LEASE ADDENDUM CONFIG -->
+            <div id="form-lease" class="panel-card form-section">
+                <div class="section-title">Lease Agreement Addendum Architecture</div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Lessor / Landlord Entity Name</label>
+                        <input type="text" id="lr-landlord" placeholder="Apex Property Management" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Lessee / Tenant Full Name</label>
+                        <input type="text" id="lr-tenant" placeholder="Alex Martinez" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Demised Premises Physical Address</label>
+                        <input type="text" id="lr-address" placeholder="710 Oak Ridge Lane, Apt 4B" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Execution Date of Original Lease</label>
+                        <input type="date" id="lr-orig-date" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Addendum Effective Operational Date</label>
+                        <input type="date" id="lr-eff-date" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Amendment Language / Modified Covenant Specifics</label>
+                        <textarea id="lr-modifications" rows="4" placeholder="Example: Pursuant to this amendment, Landlord permits Tenant to house one pet dog under 30lbs, subject to a monthly premium of $50.00..." oninput="handleInputChange()"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 4: NDA CONFIG -->
+            <div id="form-nda" class="panel-card form-section">
+                <div class="section-title">Unilateral Non-Disclosure Agreement (NDA)</div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Disclosing Party (Discloser)</label>
+                        <input type="text" id="nda-discloser" placeholder="TechCorp Ventures LLC" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Receiving Party (Recipient)</label>
+                        <input type="text" id="nda-recipient" placeholder="Sarah Jenkins" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Obligation Term Length</label>
+                        <select id="nda-term" onchange="handleInputChange()">
+                            <option value="2 years">2 Years from execution</option>
+                            <option value="5 years">5 Years from execution</option>
+                            <option value="perpetual">Perpetual (No expiration)</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Definition of Confidential Information</label>
+                        <textarea id="nda-scope" rows="4" placeholder="Describe the trade secrets, financial records, customer data, or code proprietary parameters being protected..." oninput="handleInputChange()"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 5: CONTRACTOR CONFIG -->
+            <div id="form-contractor" class="panel-card form-section">
+                <div class="section-title">Independent Contractor Services Contract</div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Client / Hiring Company</label>
+                        <input type="text" id="con-client" placeholder="Global Marketing Solutions Inc." oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Contractor / Service Provider</label>
+                        <input type="text" id="con-contractor" placeholder="Liam Peterson Creative LLC" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Service Compensation ($ or Rate)</label>
+                        <input type="text" id="con-compensation" placeholder="$5,000 Flat Rate / $75 per hour" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Contract Commencement Date</label>
+                        <input type="date" id="con-start-date" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Scope of Services & Deliverables</label>
+                        <textarea id="con-scope" rows="4" placeholder="Detail explicit professional deliverables, performance dates, and acceptance checkpoints..." oninput="handleInputChange()"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 6: PROMISSORY NOTE CONFIG -->
+            <div id="form-promissory" class="panel-card form-section">
+                <div class="section-title">Unsecured Promissory Note</div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Lender / Payee Entity</label>
+                        <input type="text" id="pn-lender" placeholder="Capital Asset Holdings LLC" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Borrower / Maker Full Name</label>
+                        <input type="text" id="pn-borrower" placeholder="Richard Hendricks" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Principal Loan Amount ($)</label>
+                        <input type="number" id="pn-principal" placeholder="10000.00" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Annual Interest Rate (%)</label>
+                        <input type="number" id="pn-interest" step="0.01" placeholder="5.25" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Absolute Maturity / Payoff Date</label>
+                        <input type="date" id="pn-maturity" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Repayment Method</label>
+                        <select id="pn-method" onchange="handleInputChange()">
+                            <option value="Single installment of Principal and Interest on Maturity Date">Lump-Sum Payoff at Maturity</option>
+                            <option value="Equal monthly installments encompassing Principal and Interest">Amortized Monthly Installments</option>
+                            <option value="Interest-Only payments monthly with Principal balloon payment at Maturity">Interest-Only with Principal Balloon</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 7: LOI CONFIG -->
+            <div id="form-loi" class="panel-card form-section">
+                <div class="section-title">Letter of Intent (LOI) to Purchase Business / Asset</div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Prospective Buyer Name</label>
+                        <input type="text" id="loi-buyer" placeholder="Erlich Bachman Holdings" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Prospective Seller Name</label>
+                        <input type="text" id="loi-seller" placeholder="Laurie Bream Investments" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Proposed Purchase Consideration ($)</label>
+                        <input type="text" id="loi-price" placeholder="$250,000 Cash at Close" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Due Diligence Window (Days)</label>
+                        <input type="number" id="loi-days" placeholder="30" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Acquisition Target / Business Asset Details</label>
+                        <textarea id="loi-target" rows="4" placeholder="Specify the enterprise operations, stock equity, or real property portfolio targeted for purchase..." oninput="handleInputChange()"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 8: SMALL CLAIMS SUMMARY CONFIG -->
+            <div id="form-claims" class="panel-card form-section">
+                <div class="section-title">Small-Claims Fact Timeline & Case Narrative Builder</div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Plaintiff Name (Filing Party)</label>
+                        <input type="text" id="sc-plaintiff" placeholder="David Vance" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Defendant Name (Opposing Party)</label>
+                        <input type="text" id="sc-defendant" placeholder="Reliable Auto Repair Corp" oninput="handleInputChange()">
+                    </div>
+                    <div class="form-group">
+                        <label>Total Mathematical Damage Valuation ($)</label>
+                        <input type="number" id="sc-damages" placeholder="4850.00" oninput="handleInputChange()">
+                    </div>
+                </div>
+                
+                <hr class="section-divider">
+                <label>Add Chronological Fact Entry to Case Timeline</label>
+                <div class="array-row-input">
+                    <input type="date" id="sc-event-date" style="width: 160px;">
+                    <input type="text" id="sc-event-desc" placeholder="Event description (e.g. Paid deposit, found structural crack)">
+                    <button class="btn btn-primary" onclick="addTimelineEvent()">Append Event</button>
+                </div>
+
+                <div class="item-list-container" id="timeline-events-list">
+                    <!-- Events render dynamically here -->
+                </div>
+            </div>
+
+            <!-- TAB 9: DOCUMENT & EVIDENCE CHECKLIST CONFIG -->
+            <div id="form-checklist" class="panel-card form-section">
+                <div class="section-title">Evidence Dossier Indexing & Procedural Checklist</div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Target Material Dispute Category</label>
+                        <select id="ch-dispute-type" onchange="handleInputChange(); renderChecklistFramework();">
+                            <option value="Security Deposit Recovery / Landlord Tenant Breach">Security Deposit / Tenant Claim</option>
+                            <option value="Breach of Written Contractual Agreement">Contractual Performance Failures</option>
+                            <option value="Consumer Fraud / Defective Services Rendered">Defective Repair / Automotive Fraud</option>
+                            <option value="Tortious Property Damage / Unlawful Detainment">Property Damage / Negligence</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+                <label>Inventory Exhibits / Evidence Items</label>
+                <div class="array-row-input">
+                    <input type="text" id="ch-item-name" placeholder="E.g., Text message exchange regarding payment confirmation">
+                    <select id="ch-item-cat" style="width: 180px;">
+                        <option value="Written Record">Written Record</option>
+                        <option value="Financial Transaction">Receipt/Statement</option>
+                        <option value="Photographic Evidence">Photo/Video Exhibit</option>
+                        <option value="Electronic Artifact">Email/SMS/Audio</option>
+                    </select>
+                    <button class="btn btn-primary" onclick="addChecklistItem()">Register Item</button>
+                </div>
+
+                <div class="item-list-container" id="checklist-items-list">
+                    <!-- Inventory exhibits items layer -->
+                </div>
+            </div>
+
+            <!-- UNIVERSAL SIGNATURE CAPTURE COMPONENT -->
+            <div class="panel-card">
+                <div class="section-title">Biometric/Digital Signature Pad Block</div>
+                <p style="font-size: 0.8rem; color:#64748b; margin-bottom: 0.5rem;">Use touch displays or pointing devices to trace signature parameters directly onto the physical page canvas context below.</p>
+                <div class="signature-area">
+                    <canvas id="sig-canvas"></canvas>
+                    <div class="sig-controls">
+                        <button class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;" onclick="clearSignatureCanvas()">Clear Signature Path</button>
+                    </div>
+                </div>
+
+                <!-- Embedded Dynamic Ad Slot Inside Workspace Controls -->
+                <div class="adsense-placeholder adsense-sidebar">
+                    <div>
+                        <p style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:2px;">Advertisement</p>
+                        <span>Google AdSense Display Unit Contextual Slot<br>[300x250 Medium Rectangle Container]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Side Real-time Document Render Engine Frame -->
+        <section class="preview-panel">
+            <div class="preview-header-actions">
+                <span style="font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em;">LIVE JUDICIAL SPEC PRINT PREVIEW</span>
+                <button class="btn btn-primary" style="background:#4f46e5; padding: 0.4rem 1rem; font-size: 0.85rem;" onclick="window.print()">
+                    Execute Native Print / Save to PDF
+                </button>
+            </div>
+            
+            <div class="preview-scroll-wrapper">
+                <div class="legal-sheet" id="printable-document-engine">
+                    <!-- Target rendering engine for letters -->
+                    <div id="rendered-document-content"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rich Editorial Content Framework Section for SEO Performance Strategy Optimization -->
+    <section class="seo-content-section no-print">
+        <hr class="section-divider" style="margin-bottom: 2rem;">
+        <h2 style="font-size: 1.5rem; color: var(--primary); font-weight: 800;">Strategic Legal Documentation Framework Reference Information</h2>
+        <p style="font-size: 0.95rem; margin-bottom: 1rem;">Operating with precise documentation establishes crucial systemic protocols inside civilian and municipal small claims courts. Utilizing structured form vectors forces counterparties to analyze liability thresholds before executing expensive legal paths.</p>
+        
+        <div class="seo-grid">
+            <div class="panel-card seo-card">
+                <h3>Drafting Formal Demand Letters</h3>
+                <p>A formal demand letter is a critical precursor to formal litigation. Courts often evaluate whether the plaintiff gave the defendant an adequate window to cure default obligations. Stating concrete numbers, outlining dates, and identifying exact statutory codes optimizes small claims success metrics dramatically.</p>
+            </div>
+            <div class="panel-card seo-card">
+                <h3>Understanding Cease & Desist Notices</h3>
+                <p>Cease and Desist directives act as structural evidentiary items proving that a bad-actor counterparty received clear notice of their tortious behavior, including IP infringement, civil stalking, or defamatory patterns. Establishing explicit dates and specific notices acts as evidence if you later file for a restraining order or file a lawsuit.</p>
+            </div>
+            <div class="panel-card seo-card">
+                <h3>Lease Addendums & Modifications</h3>
+                <p>Contractual agreements regarding real property can only be successfully modified if executed in writing by all interested parties. This engine builds solid addendum language tracking original covenants, defining execution adjustments, and locking parameters down under local property codes.</p>
+            </div>
+            <div class="panel-card seo-card">
+                <h3>Small Claims Fact Structuring</h3>
+                <p>Judges process dozens of small claims files daily. Presenting a messy, disorganized narrative can hurt your case. A clean chronological case fact array presents the evidence cleanly. This allows the magistrate to easily understand the dispute, see where the contract was broken, and confirm the exact calculation of damages.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="no-print">
+        <p>&copy; 2026 DocuLegis Structural Forms Automation Systems. All Rights Reserved Client-Side.</p>
+        <p class="disclaimer">Regulatory & Technical Enforcement Disclaimer: The tools provided by this utility engine do not constitute formal legal counsel, attorney-client representations, or statutory advisory mechanics. All processing functions occur client-side inside the user's browser via secure local sandbox loops. If handling complex tort, corporate liability, or real estate actions, please cross-examine documents with licensed practitioners inside your exact municipal jurisdiction framework.</p>
+    </footer>
+
+    <!-- Comprehensive Application Logic Script -->
+    <script>
+        // Data Architecture Management Matrix
+        let appState = {
+            activeTab: 'demand',
+            jurisdiction: 'CA',
+            signatureData: null,
+            demand: {
+                sender: '', senderAddr: '', recipient: '', recipientAddr: '', amount: '', date: '', basis: ''
+            },
+            cease: {
+                sender: '', recipient: '', recipientAddr: '', type: 'Harassment and Cyberstalking', incidents: ''
+            },
+            lease: {
+                landlord: '', tenant: '', address: '', origDate: '', effDate: '', modifications: ''
+            },
+            nda: {
+                discloser: '', recipient: '', term: '2 years', scope: ''
+            },
+            contractor: {
+                client: '', contractor: '', compensation: '', startDate: '', scope: ''
+            },
+            promissory: {
+                lender: '', borrower: '', principal: '', interest: '', maturity: '', method: 'Single installment of Principal and Interest on Maturity Date'
+            },
+            loi: {
+                buyer: '', seller: '', price: '', days: '', target: ''
+            },
+            claims: {
+                plaintiff: '', defendant: '', damages: '', timeline: []
+            },
+            checklist: {
+                disputeType: 'Security Deposit Recovery / Landlord Tenant Breach', items: []
+            }
+        };
+
+        // Static Statutory Jurisdiction Mappings Database 
+        const JURISDICTION_CLAUSES = {
+            CA: "This notice and all transactional claims arising hereunder shall be governed strictly by the statutory frameworks of the State of California, without regard to conflict of law principles. Any formal small-claims actions or civil litigation resulting from non-compliance will be venued exclusively in the appropriate Judicial District Court of the county where the operational incidents occurred, pursuant to the California Code of Civil Procedure (C.C.P.).",
+            NY: "This matter shall be governed by, construed, and enforced in accordance with the substantive laws of the State of New York. Any legal actions, specialized proceedings, or municipal small claims litigation arising out of this dispute shall be brought exclusively in a court of competent jurisdiction within the State of New York, tracking Consolidated Laws parameters.",
+            TX: "Notice is executed pursuant to Texas state law. This dispute and any subsequent legal resolutions or operational adjudications shall be interpreted under the statutory framework of the State of Texas, with court venue structured in compliance with the Texas Civil Practice and Remedies Code.",
+            FL: "This document and the underlying obligations are governed wholly by the laws of the State of Florida. Any litigation resulting from a failure to resolve this matter amicably shall be processed through the appropriate Florida Circuit or County court system, subject to local jurisdictional rules.",
+            IL: "This agreement, and any claims or disputes arising out of it, shall be governed by, construed, and enforced in accordance with the laws of the State of Illinois. All legal actions must be venued strictly within the Circuit Court of the Illinois Judicial County where the cause of action or the disputed property is situated, in accordance with the Illinois Code of Civil Procedure.",
+            PA: "Pursuant to the Consolidated Statutes of the Commonwealth of Pennsylvania, this notice and all derivative obligations shall be interpreted and enforced under the laws of Pennsylvania. Any formal litigation initiated hereunder shall be filed exclusively in the Court of Common Pleas or Magisterial District Court where the cause of action originated.",
+            GA: "This document and all rights arising under it are governed by the Official Code of Georgia Annotated (O.C.G.A.). Any resulting litigation arising from failure to comply with these terms shall be brought exclusively in a court of competent jurisdiction within the State of Georgia.",
+            WA: "This matter is governed wholly by the laws of the State of Washington, with references to the Revised Code of Washington (RCW). Any legal proceedings arising from non-compliance shall be venued exclusively in the Superior or District court of the county where the operational incident occurred.",
+            UK: "This letter and any dispute or claim arising out of or in connection with its subject matter shall be governed by and construed in accordance with the laws of England and Wales. The parties irrevocably agree that the courts of England and Wales shall have exclusive jurisdiction to settle any dispute or claim arising under this transaction.",
+            CAN: "This notice and all obligations hereunder shall be governed by, and construed in accordance with, the laws of the Province of Ontario and the federal laws of Canada applicable therein. Any legal proceedings resulting from default shall be brought exclusively in the courts of Ontario.",
+            OTHER: "This matter and all associated claims shall be governed by, and construed in accordance with, the local laws of the selected state jurisdiction framework, and all formatting complies with civil structural filing standards of the domestic administrative boundary."
+        };
+
+        // Initialize Application Modules on DOM Ready Loop
+        window.addEventListener('DOMContentLoaded', () => {
+            initLocalStorageEngine();
+            initSignaturePad();
+            renderDocumentView();
+            renderChecklistFramework();
+        });
+
+        // Tab Navigation Matrix Handler
+        function switchTab(tabId) {
+            appState.activeTab = tabId;
+            
+            // UI Toggle Logic
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.form-section').forEach(sec => sec.classList.remove('active'));
+            
+            // Set active button
+            const activeBtn = document.getElementById(`btn-${tabId}`);
+            if(activeBtn) activeBtn.classList.add('active');
+            
+            const targetSection = document.getElementById(`form-${tabId}`);
+            if(targetSection) targetSection.classList.add('active');
+            
+            renderDocumentView();
+            saveDraftToStorage();
+        }
+
+        // Read and map input fields into application state layer
+        function handleInputChange() {
+            appState.jurisdiction = document.getElementById('global-jurisdiction').value;
+            
+            // Map Demand Fields
+            appState.demand.sender = document.getElementById('dem-sender').value;
+            appState.demand.senderAddr = document.getElementById('dem-sender-addr').value;
+            appState.demand.recipient = document.getElementById('dem-recipient').value;
+            appState.demand.recipientAddr = document.getElementById('dem-recipient-addr').value;
+            appState.demand.amount = document.getElementById('dem-amount').value;
+            appState.demand.date = document.getElementById('dem-date').value;
+            appState.demand.basis = document.getElementById('dem-basis').value;
+
+            // Map Cease Fields
+            appState.cease.sender = document.getElementById('cd-sender').value;
+            appState.cease.recipient = document.getElementById('cd-recipient').value;
+            appState.cease.recipientAddr = document.getElementById('cd-recipient-addr').value;
+            appState.cease.type = document.getElementById('cd-type').value;
+            appState.cease.incidents = document.getElementById('cd-incidents').value;
+
+            // Map Lease Fields
+            appState.lease.landlord = document.getElementById('lr-landlord').value;
+            appState.lease.tenant = document.getElementById('lr-tenant').value;
+            appState.lease.address = document.getElementById('lr-address').value;
+            appState.lease.origDate = document.getElementById('lr-orig-date').value;
+            appState.lease.effDate = document.getElementById('lr-eff-date').value;
+            appState.lease.modifications = document.getElementById('lr-modifications').value;
+
+            // Map NDA Fields
+            appState.nda.discloser = document.getElementById('nda-discloser').value;
+            appState.nda.recipient = document.getElementById('nda-recipient').value;
+            appState.nda.term = document.getElementById('nda-term').value;
+            appState.nda.scope = document.getElementById('nda-scope').value;
+
+            // Map Contractor Fields
+            appState.contractor.client = document.getElementById('con-client').value;
+            appState.contractor.contractor = document.getElementById('con-contractor').value;
+            appState.contractor.compensation = document.getElementById('con-compensation').value;
+            appState.contractor.startDate = document.getElementById('con-start-date').value;
+            appState.contractor.scope = document.getElementById('con-scope').value;
+
+            // Map Promissory Note Fields
+            appState.promissory.lender = document.getElementById('pn-lender').value;
+            appState.promissory.borrower = document.getElementById('pn-borrower').value;
+            appState.promissory.principal = document.getElementById('pn-principal').value;
+            appState.promissory.interest = document.getElementById('pn-interest').value;
+            appState.promissory.maturity = document.getElementById('pn-maturity').value;
+            appState.promissory.method = document.getElementById('pn-method').value;
+
+            // Map LOI Fields
+            appState.loi.buyer = document.getElementById('loi-buyer').value;
+            appState.loi.seller = document.getElementById('loi-seller').value;
+            appState.loi.price = document.getElementById('loi-price').value;
+            appState.loi.days = document.getElementById('loi-days').value;
+            appState.loi.target = document.getElementById('loi-target').value;
+
+            // Map Small Claims Base Fields
+            appState.claims.plaintiff = document.getElementById('sc-plaintiff').value;
+            appState.claims.defendant = document.getElementById('sc-defendant').value;
+            appState.claims.damages = document.getElementById('sc-damages').value;
+
+            // Map Checklist Base Fields
+            appState.checklist.disputeType = document.getElementById('ch-dispute-type').value;
+
+            renderDocumentView();
+            saveDraftToStorage();
+        }
+
+        // Array Mutator Modules: Chronological Timeline Matrix Events
+        function addTimelineEvent() {
+            const dateEl = document.getElementById('sc-event-date');
+            const descEl = document.getElementById('sc-event-desc');
+            
+            if(!dateEl.value || !descEl.value) {
+                alert('Please input an event date and description.');
+                return;
+            }
+
+            appState.claims.timeline.push({
+                id: Date.now(),
+                date: dateEl.value,
+                description: descEl.value
+            });
+
+            // Sort by event date
+            appState.claims.timeline.sort((a,b) => new Date(a.date) - new Date(b.date));
+            
+            descEl.value = '';
+            renderTimelineListUI();
+            renderDocumentView();
+            saveDraftToStorage();
+        }
+
+        function removeTimelineEvent(id) {
+            appState.claims.timeline = appState.claims.timeline.filter(e => e.id !== id);
+            renderTimelineListUI();
+            renderDocumentView();
+            saveDraftToStorage();
+        }
+
+        function renderTimelineListUI() {
+            const wrapper = document.getElementById('timeline-events-list');
+            wrapper.innerHTML = '';
+            
+            if(appState.claims.timeline.length === 0) {
+                wrapper.innerHTML = '<div style="padding:0.75rem; font-size:0.8rem; color:#94a3b8; text-align:center;">No timeline events registered yet.</div>';
+                return;
+            }
+
+            appState.claims.timeline.forEach(ev => {
+                const node = document.createElement('div');
+                node.className = 'array-item-node';
+                node.innerHTML = `
+                    <span><strong>${ev.date}</strong> - ${ev.description}</span>
+                    <button class="btn btn-danger" onclick="removeTimelineEvent(${ev.id})">&times;</button>
+                `;
+                wrapper.appendChild(node);
+            });
+        }
+
+        // Array Mutator Modules: Checklist Artifacts System
+        function addChecklistItem() {
+            const nameEl = document.getElementById('ch-item-name');
+            const catEl = document.getElementById('ch-item-cat');
+
+            if(!nameEl.value) {
+                alert('Please specify the exhibit evidence item documentation name.');
+                return;
+            }
+
+            appState.checklist.items.push({
+                id: Date.now(),
+                name: nameEl.value,
+                category: catEl.value
+            });
+
+            nameEl.value = '';
+            renderChecklistUI();
+            renderDocumentView();
+            saveDraftToStorage();
+        }
+
+        function removeChecklistItem(id) {
+            appState.checklist.items = appState.checklist.items.filter(i => i.id !== id);
+            renderChecklistUI();
+            renderDocumentView();
+            saveDraftToStorage();
+        }
+
+        function renderChecklistUI() {
+            const wrapper = document.getElementById('checklist-items-list');
+            wrapper.innerHTML = '';
+
+            if(appState.checklist.items.length === 0) {
+                wrapper.innerHTML = '<div style="padding:0.75rem; font-size:0.8rem; color:#94a3b8; text-align:center;">No verified custom exhibits tracked yet.</div>';
+                return;
+            }
+
+            appState.checklist.items.forEach(it => {
+                const node = document.createElement('div');
+                node.className = 'array-item-node';
+                node.innerHTML = `
+                    <span><strong>[${it.category}]</strong> ${it.name}</span>
+                    <button class="btn btn-danger" onclick="removeChecklistItem(${it.id})">&times;</button>
+                `;
+                wrapper.appendChild(node);
+            });
+        }
+
+        // Preset checklists framework
+        let structuralProceduralRules = [];
+        function renderChecklistFramework() {
+            const type = document.getElementById('ch-dispute-type').value;
+            if(type.includes('Security Deposit')) {
+                structuralProceduralRules = [
+                    "Original Residential Lease Agreement (Signed copy complete with pet/security addendums)",
+                    "Move-In Inspection Matrix Checklist & Companion Verification Media Logs",
+                    "Bank Draft verification of Initial Security Deposit Clearances",
+                    "Itemized Security Deduction Accounting Sheet delivered by Landlord",
+                    "Demand Notification Delivery Confirmation (USPS Certified Mail Track Log)"
+                ];
+            } else if(type.includes('Breach of Written Contract')) {
+                structuralProceduralRules = [
+                    "Executed Master Services Agreement or Operational Bill of Sale Documentation",
+                    "Written Project Milestone Transcripts, Change Orders, and Email Threads",
+                    "Invoices Rendered vs Associated Clearances (Bank Records / Wire Traces)",
+                    "Formal Notice of Default Communication Logs provided to Breaching Counterparty"
+                ];
+            } else {
+                structuralProceduralRules = [
+                    "Repair Estimate / Purchase Invoices and Consumer Work Orders",
+                    "Photographic Documentation detailing Defective Artifacts or Damage Layouts",
+                    "Expert Third-Party Diagnostic Evaluations or Remediation Bids",
+                    "Written Communication Thread Transcripts showing attempts to settle out of court"
+                ];
+            }
+            renderDocumentView();
+        }
+
+        // Global Local Storage Engines Integration
+        function saveDraftToStorage() {
+            try {
+                localStorage.setItem('doculegis_pro_draft_v2', JSON.stringify(appState));
+                const txt = document.getElementById('save-status-text');
+                txt.textContent = "Draft Auto-Saved " + new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit'});
+            } catch(e) {
+                console.error("Local storage allocation error: ", e);
+            }
+        }
+
+        function initLocalStorageEngine() {
+            const raw = localStorage.getItem('doculegis_pro_draft_v2');
+            if(raw) {
+                try {
+                    const parsed = JSON.parse(raw);
+                    if(parsed.activeTab) appState = parsed;
+                    
+                    // Repopulate UI Elements
+                    document.getElementById('global-jurisdiction').value = appState.jurisdiction;
+
+                    // Tab 1 UI Remap
+                    document.getElementById('dem-sender').value = appState.demand.sender || '';
+                    document.getElementById('dem-sender-addr').value = appState.demand.senderAddr || '';
+                    document.getElementById('dem-recipient').value = appState.demand.recipient || '';
+                    document.getElementById('dem-recipient-addr').value = appState.demand.recipientAddr || '';
+                    document.getElementById('dem-amount').value = appState.demand.amount || '';
+                    document.getElementById('dem-date').value = appState.demand.date || '';
+                    document.getElementById('dem-basis').value = appState.demand.basis || '';
+
+                    // Tab 2 UI Remap
+                    document.getElementById('cd-sender').value = appState.cease.sender || '';
+                    document.getElementById('cd-recipient').value = appState.cease.recipient || '';
+                    document.getElementById('cd-recipient-addr').value = appState.cease.recipientAddr || '';
+                    document.getElementById('cd-type').value = appState.cease.type || 'Harassment and Cyberstalking';
+                    document.getElementById('cd-incidents').value = appState.cease.incidents || '';
+
+                    // Tab 3 UI Remap
+                    document.getElementById('lr-landlord').value = appState.lease.landlord || '';
+                    document.getElementById('lr-tenant').value = appState.lease.tenant || '';
+                    document.getElementById('lr-address').value = appState.lease.address || '';
+                    document.getElementById('lr-orig-date').value = appState.lease.origDate || '';
+                    document.getElementById('lr-eff-date').value = appState.lease.effDate || '';
+                    document.getElementById('lr-modifications').value = appState.lease.modifications || '';
+
+                    // Tab 4 UI Remap
+                    document.getElementById('nda-discloser').value = appState.nda.discloser || '';
+                    document.getElementById('nda-recipient').value = appState.nda.recipient || '';
+                    document.getElementById('nda-term').value = appState.nda.term || '2 years';
+                    document.getElementById('nda-scope').value = appState.nda.scope || '';
+
+                    // Tab 5 UI Remap
+                    document.getElementById('con-client').value = appState.contractor.client || '';
+                    document.getElementById('con-contractor').value = appState.contractor.contractor || '';
+                    document.getElementById('con-compensation').value = appState.contractor.compensation || '';
+                    document.getElementById('con-start-date').value = appState.contractor.startDate || '';
+                    document.getElementById('con-scope').value = appState.contractor.scope || '';
+
+                    // Tab 6 UI Remap
+                    document.getElementById('pn-lender').value = appState.promissory.lender || '';
+                    document.getElementById('pn-borrower').value = appState.promissory.borrower || '';
+                    document.getElementById('pn-principal').value = appState.promissory.principal || '';
+                    document.getElementById('pn-interest').value = appState.promissory.interest || '';
+                    document.getElementById('pn-maturity').value = appState.promissory.maturity || '';
+                    document.getElementById('pn-method').value = appState.promissory.method || 'Single installment of Principal and Interest on Maturity Date';
+
+                    // Tab 7 UI Remap
+                    document.getElementById('loi-buyer').value = appState.loi.buyer || '';
+                    document.getElementById('loi-seller').value = appState.loi.seller || '';
+                    document.getElementById('loi-price').value = appState.loi.price || '';
+                    document.getElementById('loi-days').value = appState.loi.days || '';
+                    document.getElementById('loi-target').value = appState.loi.target || '';
+
+                    // Tab 8 UI Remap
+                    document.getElementById('sc-plaintiff').value = appState.claims.plaintiff || '';
+                    document.getElementById('sc-defendant').value = appState.claims.defendant || '';
+                    document.getElementById('sc-damages').value = appState.claims.damages || '';
+
+                    // Tab 9 UI Remap
+                    document.getElementById('ch-dispute-type').value = appState.checklist.disputeType || 'Security Deposit Recovery / Landlord Tenant Breach';
+
+                    renderTimelineListUI();
+                    renderChecklistUI();
+                    switchTab(appState.activeTab);
+                } catch(err) {
+                    console.warn("Storage restoration error, starting fresh.", err);
+                }
+            }
+        }
+
+        // Signature Pad Drawing Canvas Logic Engine
+        let canvas, ctx, drawing = false;
+        
+        function initSignaturePad() {
+            canvas = document.getElementById('sig-canvas');
+            ctx = canvas.getContext('2d');
+            
+            // Normalize high DPI canvas bounds
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width = canvas.offsetWidth * dpr;
+            canvas.height = canvas.offsetHeight * dpr;
+            ctx.scale(dpr, dpr);
+            
+            ctx.strokeStyle = "#000000";
+            ctx.lineWidth = 2;
+            ctx.lineCap = "round";
+
+            // Mouse Event Vector Pipelines
+            canvas.addEventListener('mousedown', (e) => {
+                drawing = true;
+                const pos = getCanvasPos(e);
+                ctx.beginPath();
+                ctx.moveTo(pos.x, pos.y);
+            });
+
+            canvas.addEventListener('mousemove', (e) => {
+                if (!drawing) return;
+                const pos = getCanvasPos(e);
+                ctx.lineTo(pos.x, pos.y);
+                ctx.stroke();
+            });
+
+            window.addEventListener('mouseup', () => {
+                if (drawing) {
+                    drawing = false;
+                    captureSignatureImage();
+                }
+            });
+
+            // Touch Interface Event Vector Pipelines
+            canvas.addEventListener('touchstart', (e) => {
+                drawing = true;
+                const t = e.touches[0];
+                const pos = getCanvasPos(t);
+                ctx.beginPath();
+                ctx.moveTo(pos.x, pos.y);
+                e.preventDefault();
+            }, { passive: false });
+
+            canvas.addEventListener('touchmove', (e) => {
+                if (!drawing) return;
+                const t = e.touches[0];
+                const pos = getCanvasPos(t);
+                ctx.lineTo(pos.x, pos.y);
+                ctx.stroke();
+                e.preventDefault();
+            }, { passive: false });
+        }
+
+        function getCanvasPos(evt) {
+            const rect = canvas.getBoundingClientRect();
+            return {
+                x: evt.clientX - rect.left,
+                y: evt.clientY - rect.top
+            };
+        }
+
+        function clearSignatureCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            appState.signatureData = null;
+            renderDocumentView();
+            saveDraftToStorage();
+        }
+
+        function captureSignatureImage() {
+            const blank = document.createElement('canvas');
+            blank.width = canvas.width;
+            blank.height = canvas.height;
+            if(canvas.toDataURL() === blank.toDataURL()) {
+                appState.signatureData = null;
+            } else {
+                appState.signatureData = canvas.toDataURL();
+            }
+            renderDocumentView();
+            saveDraftToStorage();
+        }
+
+        // Dynamic Text Compilers Engine generating standard Judicial/Times New Roman Layouts
+        function renderDocumentView() {
+            const docWrapper = document.getElementById('rendered-document-content');
+            const targetTab = appState.activeTab;
+            const stateClause = JURISDICTION_CLAUSES[appState.jurisdiction] || JURISDICTION_CLAUSES.OTHER;
+            
+            const signatureHTML = appState.signatureData 
+                ? `<img src="${appState.signatureData}" class="injected-sig-img" alt="User Electronic Signature Binding"/>`
+                : `<div style="height:40px; border-bottom:1px dashed #cccccc; margin-bottom:0.5rem; width:80%;">[Sign in Signature Pad Box]</div>`;
+
+            let docHTML = '';
+            const todayStr = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+            if(targetTab === 'demand') {
+                docHTML = `
+                    <div class="doc-header">FORMAL NOTICE OF DEMAND FOR SETTLEMENT</div>
+                    <div class="doc-meta-block">
+                        <div class="doc-row"><strong>DATE:</strong> ${todayStr}</div>
+                        <div class="doc-row"><strong>FROM:</strong> ${appState.demand.sender || '[Sender Name Input Required]'}</div>
+                        <div class="doc-row"><strong>ADDRESS:</strong> ${appState.demand.senderAddr || '[Sender Address Required]'}</div>
+                    </div>
+                    <div class="doc-recipient">
+                        <strong>TO:</strong> ${appState.demand.recipient || '[Recipient Name Input Required]'}<br>
+                        <strong>MAILING ADDRESS:</strong> ${appState.demand.recipientAddr || '[Recipient Address Required]'}
+                    </div>
+                    <div class="doc-body">
+                        <p class="no-indent"><strong>DEAR ${String(appState.demand.recipient).toUpperCase() || 'PARTISAN'},</strong></p>
+                        <p>This correspondence serves as formal legal notice demanding payment regarding unresolved financial liabilities. The claimant asserts that the recipient owes a total liquidated sum of <strong>$${appState.demand.amount || '0.00'}</strong> based on the facts below:</p>
+                        <p>${appState.demand.basis || '[Factual narrative basis of claim has not been specified yet. Please construct context parameters in left control grid panel.]'}</p>
+                        <p>Take notice that you are required to remit the full stated amount of $${appState.demand.amount || '0.00'} on or before the absolute deadline of <strong>${appState.demand.date ? new Date(appState.demand.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}) : '[Deadline Date Required]'}</strong>. Failure to cure this outstanding breach before the date specified will result in immediate legal escalation.</p>
+                        <p class="jurisdiction-clause-render">${stateClause}</p>
+                    </div>
+                    <div class="doc-signatures">
+                        <div class="sig-block">
+                            ${signatureHTML}
+                            <div class="sig-line">Declarant Authorized Signature</div>
+                        </div>
+                    </div>
+                `;
+            } 
+            
+            else if(targetTab === 'cease') {
+                docHTML = `
+                    <div class="doc-header">NOTICE TO CEASE AND DESIST</div>
+                    <div class="doc-meta-block">
+                        <div class="doc-row"><strong>DATE:</strong> ${todayStr}</div>
+                        <div class="doc-row"><strong>ISSUED BY:</strong> ${appState.cease.sender || '[Protected Party Input]'}</div>
+                    </div>
+                    <div class="doc-recipient">
+                        <strong>TO TARGET PARTY:</strong> ${appState.cease.recipient || '[Target Offender Input]'}<br>
+                        <strong>OFFENDER PHYSICAL RESIDENCE:</strong> ${appState.cease.recipientAddr || '[Target Address Input]'}
+                    </div>
+                    <div class="doc-body">
+                        <p class="no-indent"><strong>NOTICE TO INTENDED RECIPIENT:</strong></p>
+                        <p>You are hereby commanded to immediately CEASE AND DESIST all actions constituting unlawful <strong>${appState.cease.type}</strong> against the interests of ${appState.cease.sender || '[Protected Party]'}. Your actions have caused substantial disruption and constitute an actionable civil tort under state code parameters.</p>
+                        <p>The claimant registers the following specific incidents of unlawful behavior as foundational context for this injunction declaration:</p>
+                        <p>${appState.cease.incidents || '[Explicit chronological incident logs are currently blank. Populate in configuration area to display.]'}</p>
+                        <p>If you fail to halt the targeted actions immediately upon receipt of this declaration, the injured party will file for injunctive relief, restrains, and compensatory civil damages without further warning.</p>
+                        <p class="jurisdiction-clause-render">${stateClause}</p>
+                    </div>
+                    <div class="doc-signatures">
+                        <div class="sig-block">
+                            ${signatureHTML}
+                            <div class="sig-line">Issuing Party Signature Seal</div>
+                        </div>
+                    </div>
+                `;
+            } 
+            
+            else if(targetTab === 'lease') {
+                docHTML = `
+                    <div class="doc-header">ADDENDUM TO LEASE AGREEMENT</div>
+                    <div class="doc-body">
+                        <p class="no-indent">This Lease Addendum is entered into effective <strong>${appState.lease.effDate ? new Date(appState.lease.effDate).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}) : '[Effective Date]'}</strong>, by and between Landlord / Lessor entity <strong>${appState.lease.landlord || '[Landlord Entity Name]'}</strong> and Tenant / Lessee party <strong>${appState.lease.tenant || '[Tenant Full Name]'}</strong> regarding the real property demised premises located at: <strong>${appState.lease.address || '[Demised Property Physical Location]'}</strong>.</p>
+                        <p>WHEREAS, the parties executed an original underlying Lease Contract dated <strong>${appState.lease.origDate ? new Date(appState.lease.origDate).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}) : '[Original Execution Date]'}</strong>; and the parties now desire to modify certain covenants contained within said contract framework.</p>
+                        <p>NOW THEREFORE, in consideration of mutual promises and extensions, the parties agree that the lease criteria are altered as follows:</p>
+                        <p style="text-indent:0; padding:1rem; border:1px solid #000; background:#fafafa;">${appState.lease.modifications || '[Addendum modification language is blank. Provide written modifications parameter logic to view text.]'}</p>
+                        <p>Save as expressly modified via this contractual addendum instance, all parameters, liabilities, options, and rules set out in the original lease remain fully active and binding upon all participating signees.</p>
+                        <p class="jurisdiction-clause-render">${stateClause}</p>
+                    </div>
+                    <div class="doc-signatures">
+                        <div class="sig-block">
+                            ${signatureHTML}
+                            <div class="sig-line">Lessor / Landlord Signature</div>
+                        </div>
+                        <div class="sig-block">
+                            <div style="height:40px;"></div>
+                            <div class="sig-line">Lessee / Tenant Signature</div>
+                        </div>
+                    </div>
+                `;
+            } 
+
+            else if(targetTab === 'nda') {
+                docHTML = `
+                    <div class="doc-header">MUTUAL NON-DISCLOSURE AGREEMENT</div>
+                    <div class="doc-meta-block">
+                        <div class="doc-row"><strong>EFFECTIVE DATE:</strong> ${todayStr}</div>
+                        <div class="doc-row"><strong>DISCLOSING PARTY:</strong> ${appState.nda.discloser || '[Discloser Name]'}</div>
+                        <div class="doc-row"><strong>RECEIVING PARTY:</strong> ${appState.nda.recipient || '[Recipient Name]'}</div>
+                    </div>
+                    <div class="doc-body">
+                        <p>This Non-Disclosure Agreement (the "Agreement") is designed to prevent the unauthorized disclosure of Proprietary and Confidential Information shared between the Disclosing Party and the Receiving Party. The parties agree as follows:</p>
+                        <p>The Receiving Party shall hold and maintain the Confidential Information in strictest confidence for the sole and exclusive benefit of the Disclosing Party. The receiving party shall restrict access to Confidential Information to employees, contractors, and advisors strictly requiring such parameters to carry out professional tasks.</p>
+                        <p><strong>SCOPE OF PROTECTED INFORMATION:</strong></p>
+                        <p style="text-indent:0; padding:1rem; border:1px solid #000; background:#fafafa;">${appState.nda.scope || '[Confidential Scope definition is currently blank. Detail proprietary metrics to display scope.]'}</p>
+                        <p>The non-disclosure obligations of this contract shall survive and remain fully active for a term of <strong>${appState.nda.term}</strong> following the Effective Date of execution.</p>
+                        <p class="jurisdiction-clause-render">${stateClause}</p>
+                    </div>
+                    <div class="doc-signatures">
+                        <div class="sig-block">
+                            ${signatureHTML}
+                            <div class="sig-line">Discloser Authorized Seal</div>
+                        </div>
+                        <div class="sig-block">
+                            <div style="height:40px;"></div>
+                            <div class="sig-line">Recipient Authorized Seal</div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            else if(targetTab === 'contractor') {
+                docHTML = `
+                    <div class="doc-header">INDEPENDENT CONTRACTOR AGREEMENT</div>
+                    <div class="doc-meta-block">
+                        <div class="doc-row"><strong>AGREEMENT DATE:</strong> ${todayStr}</div>
+                        <div class="doc-row"><strong>THE CLIENT:</strong> ${appState.contractor.client || '[Client Name]'}</div>
+                        <div class="doc-row"><strong>THE CONTRACTOR:</strong> ${appState.contractor.contractor || '[Contractor Name]'}</div>
+                    </div>
+                    <div class="doc-body">
+                        <p>This Independent Contractor Agreement (the "Agreement") defines the professional engagement between Client and Contractor. The Contractor agrees to provide services as an independent contractor, and nothing herein shall establish an employer-employee, partnership, or agency relationship.</p>
+                        <p><strong>SCOPE OF WORK & SERVICES DELIVERABLES:</strong></p>
+                        <p style="text-indent:0; padding:1rem; border:1px solid #000; background:#fafafa;">${appState.contractor.scope || '[Scope of Work definitions are blank. Provide contract objectives details to view Scope.]'}</p>
+                        <p><strong>COMPENSATION:</strong> Client shall pay Contractor the sum of <strong>${appState.contractor.compensation || '[Compensation terms]'}</strong> for the complete and acceptable rendering of defined work deliverables. Invoices shall be processed in accordance with the billing terms defined within the Scope of Work.</p>
+                        <p>The Contractor agrees that all intellectual property, developments, and works of authorship created under this Agreement shall belong solely and exclusively to the Client as "works made for hire."</p>
+                        <p class="jurisdiction-clause-render">${stateClause}</p>
+                    </div>
+                    <div class="doc-signatures">
+                        <div class="sig-block">
+                            ${signatureHTML}
+                            <div class="sig-line">Authorized Client Signature</div>
+                        </div>
+                        <div class="sig-block">
+                            <div style="height:40px;"></div>
+                            <div class="sig-line">Authorized Contractor Signature</div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            else if(targetTab === 'promissory') {
+                const interestRate = parseFloat(appState.promissory.interest || '0');
+                const principalAmt = parseFloat(appState.promissory.principal || '0');
+                
+                docHTML = `
+                    <div class="doc-header">UNSECURED PROMISSORY NOTE</div>
+                    <div class="doc-meta-block">
+                        <div class="doc-row"><strong>PRINCIPAL SUM:</strong> $${principalAmt.toFixed(2)}</div>
+                        <div class="doc-row"><strong>DATE:</strong> ${todayStr}</div>
+                    </div>
+                    <div class="doc-body">
+                        <p>FOR VALUE RECEIVED, the undersigned Maker/Borrower <strong>${appState.promissory.borrower || '[Borrower Name]'}</strong> promises to pay to the order of Payee/Lender <strong>${appState.promissory.lender || '[Lender Name]'}</strong>, the principal sum of <strong>$${principalAmt.toFixed(2)}</strong> together with accrued interest calculated at an annual rate of <strong>${interestRate.toFixed(2)}%</strong>.</p>
+                        <p><strong>PAYMENT SCHEDULE & TERMS:</strong></p>
+                        <p>Payments shall be executed in accordance with the following structured criteria: <strong>${appState.promissory.method}</strong>. The entire unpaid principal balance and all outstanding interest shall become absolutely due and payable on the final Maturity Date of <strong>${appState.promissory.maturity ? new Date(appState.promissory.maturity).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}) : '[Maturity Date]'}</strong>.</p>
+                        <p>In the event of default on any installment or obligations under this Note, the entire outstanding balance, including accrued interest, shall become immediately due and payable at the option of the Lender, without notice or demand.</p>
+                        <p class="jurisdiction-clause-render">${stateClause}</p>
+                    </div>
+                    <div class="doc-signatures">
+                        <div class="sig-block">
+                            ${signatureHTML}
+                            <div class="sig-line">Borrower / Maker Signature</div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            else if(targetTab === 'loi') {
+                docHTML = `
+                    <div class="doc-header">NON-BINDING LETTER OF INTENT</div>
+                    <div class="doc-meta-block">
+                        <div class="doc-row"><strong>DATE:</strong> ${todayStr}</div>
+                        <div class="doc-row"><strong>PROSPECTIVE BUYER:</strong> ${appState.loi.buyer || '[Buyer Name]'}</div>
+                        <div class="doc-row"><strong>PROSPECTIVE SELLER:</strong> ${appState.loi.seller || '[Seller Name]'}</div>
+                    </div>
+                    <div class="doc-body">
+                        <p>This Letter of Intent (the "Letter") outlines the preliminary terms and intentions of the Prospective Buyer to acquire certain assets or business operations from the Prospective Seller as detailed below:</p>
+                        <p><strong>TARGET ACQUISITION OBJECTIVE:</strong></p>
+                        <p style="text-indent:0; padding:1rem; border:1px solid #000; background:#fafafa;">${appState.loi.target || '[Acquisition details currently blank. Describe business/assets to display.]'}</p>
+                        <p><strong>PROPOSED PURCHASE CONSIDERATION:</strong> The Prospective Buyer proposes a purchase price valuation of <strong>${appState.loi.price || '[Proposed purchase price details]'}</strong>, which shall be structured and delivered pursuant to a definitive purchase agreement.</p>
+                        <p><strong>DUE DILIGENCE TERM:</strong> Upon mutual execution of this Letter, the Prospective Seller shall grant the Buyer a exclusive due diligence window of <strong>${appState.loi.days || '0'} days</strong> to inspect books, records, and operations.</p>
+                        <p>Except for clauses relating to confidentiality, exclusivity, and governing law, this Letter is non-binding and serves strictly as a preliminary expression of transaction intent.</p>
+                        <p class="jurisdiction-clause-render">${stateClause}</p>
+                    </div>
+                    <div class="doc-signatures">
+                        <div class="sig-block">
+                            ${signatureHTML}
+                            <div class="sig-line">Prospective Buyer Signature</div>
+                        </div>
+                        <div class="sig-block">
+                            <div style="height:40px;"></div>
+                            <div class="sig-line">Prospective Seller Signature</div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            else if(targetTab === 'claims') {
+                let timelineRows = '';
+                if(appState.claims.timeline.length > 0) {
+                    appState.claims.timeline.forEach(item => {
+                        timelineRows += `<tr><td>${item.date}</td><td>${item.description}</td></tr>`;
+                    });
+                } else {
+                    timelineRows = `<tr><td colspan="2" style="text-align:center; color:#555;">No factual timeline events added to state array matrix yet.</td></tr>`;
+                }
+
+                docHTML = `
+                    <div class="doc-header">SMALL-CLAIMS JUDICIAL CASE SUMMARY BRIEF</div>
+                    <div class="doc-meta-block">
+                        <div class="doc-row"><strong>PLAINTIFF / ACCUSANT:</strong> ${appState.claims.plaintiff || '[Plaintiff Name]'}</div>
+                        <div class="doc-row"><strong>DEFENDANT / RESPONDENT:</strong> ${appState.claims.defendant || '[Defendant Name]'}</div>
+                        <div class="doc-row"><strong>TOTAL CLAIMED DAMAGES SPECIFICATION:</strong> $${appState.claims.damages || '0.00'}</div>
+                    </div>
+                    <div class="doc-body">
+                        <p class="no-indent"><strong>STATEMENT OF FACTS & CAUSE OF ACTION:</strong></p>
+                        <p>The Plaintiff, ${appState.claims.plaintiff || '[Plaintiff Name]'}, brings this summary overview declaration before the Small Claims Court division tracking damage actions against ${appState.claims.defendant || '[Defendant Name]'}. The calculation of damages totals a fixed liquid balance parameter of $${appState.claims.damages || '0.00'}. The chronology of events leading directly to the liability is structured as follows:</p>
+                        
+                        <table class="doc-timeline-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 25%;">Transaction Date</th>
+                                    <th>Factual Description of Event / Breach Metric</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${timelineRows}
+                            </tbody>
+                        </table>
+                        
+                        <p>The events listed above demonstrate that the Defendant failed to fulfill their legal obligations, directly causing the economic losses claimed. The Plaintiff asks the court to award judgment for the full amount, plus all court filing fees and serving costs allowed by law.</p>
+                        <p class="jurisdiction-clause-render">${stateClause}</p>
+                    </div>
+                    <div class="doc-signatures">
+                        <div class="sig-block">
+                            ${signatureHTML}
+                            <div class="sig-line">Filing Plaintiff Certified Signature</div>
+                        </div>
+                    </div>
+                `;
+            } 
+            
+            else if(targetTab === 'checklist') {
+                let checkRows = '';
+                
+                // Process core procedural rules
+                structuralProceduralRules.forEach(rule => {
+                    checkRows += `
+                        <div style="margin-bottom:0.75rem; display:flex; align-items:flex-start; gap:0.5rem;">
+                            <span style="font-family:monospace; font-size:14pt; line-height:1;">[ ]</span>
+                            <span><strong>PROCEDURAL MANDATE:</strong> ${rule}</span>
+                        </div>
+                    `;
+                });
+
+                // Process custom tracked items
+                if(appState.checklist.items.length > 0) {
+                    checkRows += `<div style="margin: 1.5rem 0 0.5rem 0; font-weight:bold; text-decoration:underline;">EXHIBIT ARTIFACT FILES INVENTORY DISCLOSURE:</div>`;
+                    appState.checklist.items.forEach((item, index) => {
+                        checkRows += `
+                            <div style="margin-bottom:0.5rem; display:flex; align-items:flex-start; gap:0.5rem; font-size:11pt;">
+                                <span>[ ]</span>
+                                <span><strong>EXHIBIT ${index + 1} (${item.category}):</strong> ${item.name}</span>
+                            </div>
+                        `;
+                    });
+                }
+
+                docHTML = `
+                    <div class="doc-header">CASE COMPLIANCE INDEX & DISCLOSURE CHECKLIST</div>
+                    <div class="doc-meta-block">
+                        <div class="doc-row"><strong>CASE ACTION MODEL:</strong> ${appState.checklist.disputeType}</div>
+                        <div class="doc-row"><strong>DOCUMENT MATRIX TARGET:</strong> Pre-Filing Court Preparation Dossier</div>
+                    </div>
+                    <div class="doc-body">
+                        <p class="no-indent">This operational control documentation functions as an alignment checklist for tracking and preparing structural evidence packages. Verify that each checkbox context receives material corroboration before submitting parameters to judicial clerks.</p>
+                        
+                        <div style="margin:1.5rem 0; padding:1rem; border:1px solid #000; border-radius:4px;">
+                            ${checkRows}
+                        </div>
+                        
+                        <p>Ensure you file the original documents with the court clerk. Keep exact copies of all filed forms and proof of service logs for your own records.</p>
+                        <p class="jurisdiction-clause-render">${stateClause}</p>
+                    </div>
+                `;
+            }
+
+            docWrapper.innerHTML = docHTML;
+        }
+    </script>
+</body>
+</html>
